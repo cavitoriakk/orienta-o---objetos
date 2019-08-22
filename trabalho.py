@@ -19,14 +19,14 @@ class Paciente(Hospital):
     def Imprimir2(self):
         print(Paciente)
 
-class Pessoa(Hospital, Paciente):
+class Pessoa (Hospital):
     def __init__(self, nome, idade, RG, nacionalidade, CPF):
         super().__init__(Pessoa)
         self.Imprimir()
 
 
 Hospital = Hospital('San Diego', 'Caieiras', '1170707070', '24 horas', 'publico e privado')
-Paciente = Paciente('AIDS', 'dores', 'infectável')
-animal = Animal('nome', 'dono')
+Paciente = Paciente('AIDS', 'dores', 'infectavel')
+Pessoa = Pessoa ('Lidiane', '16 anos', '578347952204', 'brasileira', '895379275932')
 
 print(Paciente.Pessoas)
